@@ -18,4 +18,8 @@
 <resources>
     <string name="sample_action">Sample action</string>
     <string name="search_title">Search Contacts</string>
+    <string name="title_activity_restau_activite">RestauActivite</string>
+    <string name="title_activity_restau_desc_activite">restauName</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>

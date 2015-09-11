@@ -15,19 +15,19 @@
 */
 package com.example.android.basiccontactables.tests;
 
-import com.example.android.basiccontactables.*;
+import com.example.android.basiccontactables.activite.VilleActivite;
 
 import android.test.ActivityInstrumentationTestCase2;
 
 /**
 * Tests for BasicContactables sample.
 */
-public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> {
+public class SampleTests extends ActivityInstrumentationTestCase2<VilleActivite> {
 
-    private MainActivity mTestActivity;
+    private VilleActivite mTestActivity;
 
     public SampleTests() {
-        super(MainActivity.class);
+        super(VilleActivite.class);
     }
 
     @Override
