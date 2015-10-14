@@ -50,9 +50,6 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <!-- END_INCLUDE(contacts_permission) -->
-        <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
-        <uses-permission android:name="android.permission.READ_CONTACTS" />
 
         <permission android:name="android" />
     </application>

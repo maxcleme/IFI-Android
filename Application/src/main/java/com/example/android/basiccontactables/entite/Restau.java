@@ -11,7 +11,7 @@ import com.j256.ormlite.table.DatabaseTable;
 public class Restau  {
 
     @DatabaseField(generatedId = true)
-    private Long id;
+    private int id;
 
     @DatabaseField
     private String nom;
@@ -41,13 +41,6 @@ public class Restau  {
 
     @Override
     public String toString() {
-        return "Restau{" +
-                "id=" + id +
-                ", nom='" + nom + '\'' +
-                ", description='" + description + '\'' +
-                ", horraire='" + horraire + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", ville=" + ville +
-                '}';
+        return nom;
     }
 }

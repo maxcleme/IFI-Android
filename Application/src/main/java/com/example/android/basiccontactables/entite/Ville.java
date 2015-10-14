@@ -13,7 +13,7 @@ import java.util.List;
 public class Ville {
 
     @DatabaseField(generatedId = true)
-    private Long id;
+    private int id;
 
     @DatabaseField
     private String nom;

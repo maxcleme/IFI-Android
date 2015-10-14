@@ -19,7 +19,6 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,39 +29,41 @@ import android.widget.Toast;
 
 import com.example.android.basiccontactables.R;
 import com.example.android.basiccontactables.entite.Ville;
-import com.example.android.basiccontactables.helper.VilleHelper;
+import com.example.android.basiccontactables.helper.DatabaseHelper;
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
+import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 
 import java.sql.SQLException;
+import java.text.Normalizer;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Simple one-activity app that takes a search term via the Action Bar
  * and uses it as a query to search the contacts database via the Contactables
  * table.
  */
-public class VilleActivite extends OrmLiteBaseActivity<VilleHelper> {
+public class VilleActivite extends OrmLiteBaseActivity<DatabaseHelper> {
 
+
+    private ArrayAdapter<Ville> villeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_item_list);
 
+
         ListView listView = (ListView) findViewById(R.id.listview);
         List<Ville> villes;
         try {
-            villes = getHelper().getDao(Ville.class).queryForAll();
-            listView.setAdapter(new ArrayAdapter<Ville>(this, android.R.layout.simple_list_item_1, villes));
-            Log.d("LIST SIZE :", ""+villes.size());
+            villes = getHelper().getVilleDao().queryForAll();
+            villeAdapter = new ArrayAdapter<Ville>(this, android.R.layout.simple_list_item_1, villes);
+            listView.setAdapter(villeAdapter);
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        /*
-        TODO: Mettre l'id dans l'intent lors du onClick()
-         */
-        /*
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -70,13 +71,12 @@ public class VilleActivite extends OrmLiteBaseActivity<VilleHelper> {
                         Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(VilleActivite.this, RestauActivite.class);
-                intent.putExtra("villeID", position);
+                intent.putExtra("villeId", position+1);
 
                 startActivity(intent);
             }
 
         });
-        */
 
 
     }
@@ -96,6 +96,20 @@ public class VilleActivite extends OrmLiteBaseActivity<VilleHelper> {
                 (SearchView) menu.findItem(R.id.search).getActionView();
         searchView.setSearchableInfo(
                 searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                villeAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                villeAdapter.getFilter().filter(query);
+                return false;
+            }
+        });
 
         return true;
     }
