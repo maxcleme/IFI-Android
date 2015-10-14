@@ -15,27 +15,33 @@
  */
 package com.example.android.basiccontactables.activite;
 
-import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.android.basiccontactables.R;
-import com.example.android.basiccontactables.adapter.VilleAdapter;
+import com.example.android.basiccontactables.entite.Ville;
+import com.example.android.basiccontactables.helper.VilleHelper;
+import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
+
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Simple one-activity app that takes a search term via the Action Bar
  * and uses it as a query to search the contacts database via the Contactables
  * table.
  */
-public class VilleActivite extends Activity {
+public class VilleActivite extends OrmLiteBaseActivity<VilleHelper> {
 
 
     @Override
@@ -44,8 +50,19 @@ public class VilleActivite extends Activity {
         setContentView(R.layout.fragment_item_list);
 
         ListView listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(new VilleAdapter(this));
+        List<Ville> villes;
+        try {
+            villes = getHelper().getDao(Ville.class).queryForAll();
+            listView.setAdapter(new ArrayAdapter<Ville>(this, android.R.layout.simple_list_item_1, villes));
+            Log.d("LIST SIZE :", ""+villes.size());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
+        /*
+        TODO: Mettre l'id dans l'intent lors du onClick()
+         */
+        /*
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -59,6 +76,7 @@ public class VilleActivite extends Activity {
             }
 
         });
+        */
 
 
     }

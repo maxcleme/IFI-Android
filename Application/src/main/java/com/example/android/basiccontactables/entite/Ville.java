@@ -1,26 +1,34 @@
 package com.example.android.basiccontactables.entite;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 import java.util.List;
 
 /**
  * Created by RMS on 08/09/2015.
  */
+
+@DatabaseTable(tableName = "ville")
 public class Ville {
 
+    @DatabaseField(generatedId = true)
+    private Long id;
+
+    @DatabaseField
     private String nom;
 
-    private List<Restau> listeRestau;
 
-    public Ville(String nom, List<Restau> listeRestau){
+    public Ville(){
+
+    }
+
+    public Ville(String nom){
         this.nom = nom;
-        this.listeRestau = listeRestau;
     }
 
-    public String getNom() {
+    @Override
+    public String toString() {
         return nom;
-    }
-
-    public List<Restau> getListeRestau() {
-        return listeRestau;
     }
 }
