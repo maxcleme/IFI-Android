@@ -25,17 +25,21 @@ public class Restau  {
     @DatabaseField
     private String adresse;
 
+    @DatabaseField
+    private String telephone;
+
     @DatabaseField(foreign = true)
     private Ville ville;
 
     public Restau() {
     }
 
-    public Restau(String nom, String description, String horraire, String adresse, Ville ville) {
+    public Restau(String nom, String description, String horraire, String adresse, String telephone, Ville ville) {
         this.nom = nom;
         this.description = description;
         this.horraire = horraire;
         this.adresse = adresse;
+        this.telephone = telephone;
         this.ville = ville;
     }
 
