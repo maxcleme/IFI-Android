@@ -2,6 +2,7 @@ package com.example.android.basiccontactables.activite;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
@@ -30,14 +31,15 @@ public class RestauActivite extends OrmLiteBaseActivity<DatabaseHelper> {
         final int villeId = getIntent().getIntExtra("villeId", Integer.MIN_VALUE);
 
         List<Restau> restaus;
-        try {
+            try {
             restaus = this.getHelper().getRestauDao().queryForEq("ville_id", villeId);
             restauAdapter = new ArrayAdapter<Restau>(this, android.R.layout.simple_list_item_1, restaus);
             listView.setAdapter(restauAdapter);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        Intent intent = new Intent(this, RestauDescActivite.class);
+        startActivity(intent);
 
     }
 
