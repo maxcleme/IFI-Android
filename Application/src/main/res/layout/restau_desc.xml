@@ -17,6 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/restauTel"
+        android:autoLink="phone"
         android:layout_gravity="center_horizontal" />
 
     <TextView

@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String DATABASE_NAME = "crous";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
     private Dao<Ville, Long> villeDao;
     private Dao<Restau, Long> restauDao;
@@ -38,7 +38,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
             Ville ville = new Ville("Arras");
             villeDao.create(ville);
-            restauDao.create(new Restau("R.U. d'Arras", "Nouveau : La cafétéria Arras propose un nouveau service de restauration en ligne. Gagnez du temps et commandez en ligne vos prestations de cafétéria site Crous Drive", "Ouvert de 11h00 à 13h45", "12 rue du Temple (Face à l'UFR d'histoire)", ville));
+            restauDao.create(new Restau("R.U. d'Arras", "Nouveau : La cafétéria Arras propose un nouveau service de restauration en ligne. Gagnez du temps et commandez en ligne vos prestations de cafétéria site Crous Drive", "Ouvert de 11h00 à 13h45", "12 rue du Temple (Face à l'UFR d'histoire)", "0600000000", ville));
 
             villeDao.create(new Ville("Béthune"));
             villeDao.create(new Ville("Boulogne sur Mer"));
@@ -88,6 +88,5 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         }
         return restauDao;
     }
-
 
 }

@@ -4,17 +4,22 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.android.basiccontactables.R;
 import com.example.android.basiccontactables.entite.Restau;
 import com.example.android.basiccontactables.helper.DatabaseHelper;
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
 
+import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -27,7 +32,7 @@ public class RestauActivite extends OrmLiteBaseActivity<DatabaseHelper> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_item_list);
 
-        ListView listView = (ListView) findViewById(R.id.listview);
+        final ListView listView = (ListView) findViewById(R.id.listview);
         final int villeId = getIntent().getIntExtra("villeId", Integer.MIN_VALUE);
 
         List<Restau> restaus;
@@ -38,8 +43,25 @@ public class RestauActivite extends OrmLiteBaseActivity<DatabaseHelper> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        Intent intent = new Intent(this, RestauDescActivite.class);
-        startActivity(intent);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Restau restau = (Restau) listView.getItemAtPosition(position);
+
+                Intent intent = new Intent(RestauActivite.this, RestauDescActivite.class);
+                intent.putExtra("adresse", restau.getAdresse());
+                intent.putExtra("description", restau.getDescription());
+                intent.putExtra("horaire", restau.getHorraire());
+                intent.putExtra("nom", restau.getNom());
+                intent.putExtra("telephone", restau.getTelephone());
+
+                startActivity(intent);
+            }
+
+        });
+
 
     }
 

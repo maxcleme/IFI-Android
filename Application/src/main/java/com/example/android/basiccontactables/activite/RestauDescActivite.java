@@ -23,8 +23,7 @@ public class RestauDescActivite extends Activity {
 
         // Get the message from the intent
         Intent intent = getIntent();
-        int restauId = intent.getIntExtra("restauId", Integer.MIN_VALUE);
-        int villeId = intent.getIntExtra("villeId", Integer.MIN_VALUE);
+
         // Create the text view
         setContentView(R.layout.restau_desc);
 
@@ -38,12 +37,10 @@ public class RestauDescActivite extends Activity {
 
 
       //  name.setText(DataCROUS.getMap().get(villeId).getListeRestau().get(restauId).getNom());
-        name.setText("chez pepito");
-        tel.setText("03.20.16.45.31");
-        adresse.setText("Angle des rues Massillon et Thumesnil\n" +
-                "Place Déliot\n" +
-                "Lille");
-        horraire.setText("Du lundi au vendredi de 11h30 à 13h45");
+        name.setText(intent.getStringExtra("nom"));
+        tel.setText("tel:"+intent.getStringExtra("telephone"));
+        adresse.setText(intent.getStringExtra("adresse"));
+        horraire.setText(intent.getStringExtra("horaire"));
         image.setImageResource(R.mipmap.restau);
 
     }
