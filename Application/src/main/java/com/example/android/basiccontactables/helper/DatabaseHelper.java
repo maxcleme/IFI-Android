@@ -44,14 +44,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU d'Arras",
                     "Restauration traditionnelle, paiement par Carte CROUS et carte multiservices",
                     "11h00 à 13h45",
-                    "12 rue du Temple (Face à l'UFR d'histoire)",
+                    "50.2836246,2.7900558",
                     "0321508182",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria du RU d'Arras",
                     "La cafétéria Arras propose un nouveau service de restauration en ligne. Gagnez du temps et commandez en ligne vos prestations de cafétéria site Crous Drive, paiement par Carte CROUS et carte multiservices",
                     "08h30 à 15h30",
-                    "12 rue du Temple (Face à l'UFR d'histoire)",
+                    "50.2836246,2.7900558",
                     "0321508182",
                     ville));
 
@@ -61,14 +61,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU Svhweitzer",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h30 à 13h30 et de 19h00 à 20h30",
-                    "1326, rue de l'Université",
+                    "50.5162147,2.6584537",
                     "0321573187",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria du RU Svhweitzer",
                     "Paiement par Carte Multiservices",
                     "07h30 à 14h00 et de 18h30 à 20h30",
-                    "1326, rue de l'Université",
+                    "50.5162147,2.6584537",
                     "0321573187",
                     ville));
 
@@ -78,14 +78,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU de Boulogne sur Mer",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h45",
-                    "46, rue du vivier",
+                    "50.726737,1.6044941",
                     "0321336570",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria du RU de Boulogne sur Mer",
                     "Paiement par Carte Multiservices",
                     "11h00 à 15h00",
-                    "46, rue du vivier",
+                    "50.726737,1.6044941",
                     "0321336570",
                     ville));
 
@@ -96,7 +96,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU de la Mi-Voix",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 14h00",
-                    "275, rue du Pasteur Martin Luther King",
+                    "50.9525899,1.8789302",
                     "0321971740",
                     ville));
 
@@ -106,7 +106,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU le Rambouillet",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h30 à 13h30",
-                    "Rue de Rambouillet",
+                    "50.1880039,3.2409437",
                     "0327748358",
                     ville));
 
@@ -116,7 +116,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU de Douai",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h30 à 13h30",
-                    "95, rue de Lens",
+                    "50.3739077,3.0705391",
                     "0327713290",
                     ville));
 
@@ -126,14 +126,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU de Dunkerque",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h30 à 13h45",
-                    "1, Place des Nations",
+                    "51.0360783,2.3690785",
                     "0328662826",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria du RU de Dunkerque",
                     "Paiement par Carte Multiservices",
                     "11h30 à 14h00",
-                    "1, Place des Nations",
+                    "51.0360783,2.3690785",
                     "0328662826",
                     ville));
 
@@ -144,21 +144,21 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU de Lens",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h30",
-                    "34, rue de Jean Souvraz",
+                    "50.4348287,2.824084",
                     "0321430997",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria du RU de Lens",
                     "Paiement par Carte Multiservices",
                     "11h00 à 14h00",
-                    "34, rue de Jean Souvraz",
+                    "50.4348287,2.824084",
                     "0321430997",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria IUT de Lens",
                     "Paiement par Carte Multiservices",
                     "11h00 à 14h00",
-                    "34, rue de Jean Souvraz",
+                    "50.4348287,2.824084",
                     "0321430997",
                     ville));
 
@@ -168,28 +168,28 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU Lille-Moulins",
                     "Restauration traditionnelle, salle pour les étudiants / salle pour les personnels, paiement par Carte Multiservices",
                     "11h30 à 13h45",
-                    "Place Déliot, angle des rues Massillon et Thumesnil",
+                    "50.6191443,3.0664598",
                     "0320164531",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria Sciences Politique",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "10h00 à 14h00",
-                    "84 rue de trévise à Lille",
+                    "50.6230192,3.0753539",
                     "0320164531",
                     ville));
             restauDao.create(new Restau(
                     "Brasserie La Basoche",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "07h30 à 15h30 (15h00 le mercredi)",
-                    "rue de Fontenoy à Lille, dans l'enceinte de l'université",
+                    "50.6205551,3.068542",
                     "0320164531",
                     ville));
             restauDao.create(new Restau(
                     "RU Chatillon",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "Midi et soir (sauf le vendredi soir) \n" + "Lundi au vendredi de 11h30 à 13h45\n" + "Lundi au jeudi de 18h30 à 20h00",
-                    "24, rue Gauthier de Châtillon",
+                    "50.6295008,3.0624919",
                     "0328380014",
                     ville));
             restauDao.create(new Restau(
@@ -197,29 +197,28 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "Paiement par Carte Multiservices",
                     "Lundi, mardi et vendredi de 08h00 à 15h00 \n" +
                             "Mercredi et jeudi de 08h00 à 20h00 ",
-                    "180 rue Gaston Berger à Lille \n" +
-                            "Sur le complexe universitaire José Savoye ",
+                    "50.6138666,3.0784047",
                     "0328380014",
                     ville));
             restauDao.create(new Restau(
                     "RU Chatelet",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "Lundi au vendredi de 11h30 à 13h30",
-                    "Rue F. Combemale ( Métro CHR Oscar Lambret )",
+                    "50.6133782,3.0325097",
                     "0320861094",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie du RU Chatelet",
                     "Paiement par Carte Multiservices",
                     "11h30 à 13h30",
-                    "Rue F. Combemale ( Métro CHR Oscar Lambret )",
+                    "50.6133782,3.0325097",
                     "0320861094",
                     ville));
             restauDao.create(new Restau(
                     "RU Charles Debierres",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "Lundi au vendredi de 11h30 à 14h00",
-                    "171, rue Charles Debierre ( Métro Mairie de Lille )",
+                    "50.632038,3.0717299",
                     "0320181720",
                     ville));
 
