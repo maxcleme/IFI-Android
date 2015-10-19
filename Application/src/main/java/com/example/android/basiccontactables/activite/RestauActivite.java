@@ -51,11 +51,7 @@ public class RestauActivite extends OrmLiteBaseActivity<DatabaseHelper> {
                 Restau restau = (Restau) listView.getItemAtPosition(position);
 
                 Intent intent = new Intent(RestauActivite.this, RestauDescActivite.class);
-                intent.putExtra("adresse", restau.getAdresse());
-                intent.putExtra("description", restau.getDescription());
-                intent.putExtra("horaire", restau.getHorraire());
-                intent.putExtra("nom", restau.getNom());
-                intent.putExtra("telephone", restau.getTelephone());
+                intent.putExtra("restauID", restau.getId());
 
                 startActivity(intent);
             }

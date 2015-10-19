@@ -9,7 +9,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/restauName"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +19,8 @@
         android:text="Large Text"
         android:id="@+id/restauTel"
         android:autoLink="phone"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="left|center_horizontal"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +28,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/restauAdresse"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="left|center_horizontal"
+        android:layout_margin="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,12 +37,24 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/restauHorraire"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="left|center_horizontal"
+        android:layout_margin="5dp" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/restauImage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/restauDescription"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\uD83D\uDE97 \nS'y rendre"
+        android:id="@+id/buttonAdresse"
         android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>
