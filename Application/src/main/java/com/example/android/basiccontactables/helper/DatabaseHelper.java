@@ -229,21 +229,21 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU Crouy",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h00 à 13h30",
-                    "Ilôt Crouy - 36 rue de Crouy ( Métro Charles De Gaulle )",
+                    "50.687697,3.1677963",
                     "0320738824",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie du RU Crouy",
                     "Paiement par Carte Multiservices",
                     "11h00 à 14h00",
-                    "Ilôt Crouy - 36 rue de Crouy ( Métro Charles De Gaulle )",
+                    "50.687697,3.1677963",
                     "0320738824",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria ENSAIT",
                     "Paiement par Carte Multiservices",
                     "8h30 à 14h30",
-                    "9 rue de l'Ermitage",
+                    "50.6949792,3.1673177",
                     "0320738824",
                     ville));
 
@@ -253,14 +253,14 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU Les Botaniques",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h00 à 14h00",
-                    "49, rue Sainte Barbe ( Métro Tourcoing Centre )",
+                    "50.7244766,3.1643438",
                     "0320245381",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria IUT B",
                     "Paiement par Carte Multiservices",
                     "09h00 à 14h30",
-                    "49, rue Sainte Barbe ( Métro Tourcoing Centre )",
+                    "50.7244766,3.1643438",
                     "0320245381",
                     ville));
 
@@ -270,70 +270,70 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "Cafeteria Jules Mousseron",
                     "La cafétéria est située dans l'enceinte même de la résidence Jules Mousseron, au rez de chaussée",
                     "07h30 à 21h45",
-                    "Résidence universitaire Mousseron - Rue du chemin vert",
+                    "50.32979,3.510622",
                     "",
                     ville));
             restauDao.create(new Restau(
                     "RU Mont Houy",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h30",
-                    "Campus Universitaire Le Mont Houy 1 Rue du Chemin vert ",
+                    "50.32979,3.510622",
                     "0327466909",
                     ville));
             restauDao.create(new Restau(
                     "Brasserie du RU Mont Houy",
                     "Paiement par Carte Multiservices",
                     "09h00 à 10h30 et de 11h00 à 15h00",
-                    "Campus Universitaire Le Mont Houy 1 Rue du Chemin vert ",
+                    "50.32979,3.510622",
                     "0327466909",
                     ville));
             restauDao.create(new Restau(
                     "RU Mont Houy II",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h30",
-                    "Domaine universitaire",
+                    "50.32979,3.510622",
                     "0327427003",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria FLLASH",
                     "Paiement par Carte Multiservices",
                     "09h00 à 16h00 (sauf jeudi et vendredi, 14h30) ",
-                    "Domaine universitaire",
+                    "50.363115,3.5256103",
                     "0327427003",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria IUFM",
                     "Paiement par Carte Multiservices",
                     "08h30 à 14h00",
-                    "Domaine universitaire",
+                    "50.326231,3.5117623",
                     "0327427003",
                     ville));
             restauDao.create(new Restau(
                     "RU Ronzier",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h30",
-                    "Boulevard Harpignies",
+                    "50.3630104,3.5257289",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria FDEG",
                     "Paiement par Carte Multiservices",
                     "09h00 à 16h00",
-                    "Boulevard Harpignies",
+                    "50.3655161,3.5280593",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria Ronzier",
                     "Paiement par Carte Multiservices",
                     "11h00 à 14h00",
-                    "Boulevard Harpignies",
+                    "50.3630104,3.5257289",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria IUT de Valencienne",
                     "Paiement par Carte Multiservices",
                     "09h00 à 16h00",
-                    "Boulevard Harpignies",
+                    "50.3226869,3.5120529",
                     "0327295614",
                     ville));
 
@@ -344,49 +344,49 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU Le Forum",
                     "Pates et pizzas sur place ou à emporter, paiement par Carte Multiservices",
                     "11h30 à 14h00",
-                    "Lille III, situé devant la BU ",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Le Flores Cafe",
                     "Dans une ambiance conviviale venez découvrir les prestations diversifiées de ce café avec terrasse donnant sur le forum, paiement par Carte Multiservices",
                     "08h00 à 19h00",
-                    "Lille III, situé devant la BU ",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie Lille III",
                     "Des sandwichs frais et variés, des crudités, des desserts le tout à emporter Nouveau : service de commande en ligne, paiement par Carte Multiservices",
                     "10h30 à 14h00",
-                    "Lille III, situé devant la BU ",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Brasserie Les 3 lacs",
                     "La brasserie propose une carte complete du plat cuisiné au sandwich et à la salade composée, paiement par Carte Multiservices",
                     "10h00 à 15h00",
-                    "Hall d’accueil de Lille III",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Le Tout frais léger",
                     "Ilot de fraicheur et de legerté, découvrez les salades maison, les sandwichs équilibrés le tout en étant allégé, paiement par Carte Multiservices",
                     "10h00 à 15h00",
-                    "Hall d’accueil de Lille III",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "Crous Gourmand",
                     "Offrez vous un instant gourmand, petits déjeuners, viennoiseries, sandwicheries, prestations à emporter ou à manger sur la terrasse, paiement par Carte Multiservices",
                     "08h00 à 15h00",
-                    "Hall du bâtiment B de Lille III",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
                     "La Pastella",
                     "Venez découvrir la pastella, ses pâtes fraîches et sauces variées mais également des viennoiseries et sandwiches à emporter, paiement par Carte Multiservices",
                     "09h00 à 14h30",
-                    "Bâtiment A de Lille III à côté des Passerelles",
+                    "50.6267562,3.1262224",
                     "0327295614",
                     ville));
             restauDao.create(new Restau(
@@ -394,91 +394,91 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "3 salles hôtelières à disposition, paiement par Carte Multiservices",
                     "11h15 à 13h30 du lundi au vendredi\n" +
                             "12h à 13h30 le samedi",
-                    "Cité Scientifique, Lille I",
+                    "50.611910, 3.143426",
                     "0320336123",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie du RU Barrois",
                     "Vente à emporter : sachets-repas, sandwichs, paninis, croques, pizzas ..., La sandwicherie Barrois propose un nouveau service de restauration en ligne. Gagnez du temps et commandez en ligne vos prestations de cafétéria site Crous Drive ",
                     "10h00 à 14h15",
-                    "Cité Scientifique, Lille I, dans l'enceinte du RU Barrois",
+                    "50.611910, 3.143426",
                     "0320336123",
                     ville));
             restauDao.create(new Restau(
                     "Cafeteria Recueil",
                     "Paiement par Carte Multiservices",
                     "09h00 à 14h00",
-                    "21 rue de la recherche à Villeneuve d'Ascq",
+                    "50.6495643,3.1551964",
                     "0320336123",
                     ville));
             restauDao.create(new Restau(
                     "Mini R",
                     "Paiement par Carte Multiservices",
                     "7h30 à 14h30",
-                    "",
+                    "50.616716, 3.141869",
                     "0320336123",
                     ville));
             restauDao.create(new Restau(
                     "RU Pariselle",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h40",
-                    "Cité Scientifique - Boulevard Langevin A proximité des résidences Galois et Vinci et des bâtiments de Sciences naturelles et Chimie",
+                    "50.6092029,3.1434876",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "La Pasteria",
                     "Des pâtes fraîches fabriquées sur place, servies en box avec 3 sauces au choix, mais aussi des bruschetta (tartines à l’italienne), des plats gratinés, des sandwichs américains, des salades, des pâtisseries, desserts maison ... à emporter ou à consommer sur place, paiement par Carte Multiservices",
                     "11h15 à 13h30",
-                    "Cité Scientifique - Boulevard Langevin A proximité des résidences Galois et Vinci et des bâtiments de Sciences naturelles et Chimie",
+                    "50.6092029,3.1434876",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie du RU Pariselle",
                     "Formule sur le pouce” : Sandwiches et Sachets-repas (1 sandwich / 1 boisson et un laitage ou fruit ou dessert), panini, wraps, pizza sandwich, bagels, assiettes froides et toute une gamme de desserts, à emporter ou à consommer sur place, paiement par Carte Multiservices",
                     "11h à 13h40",
-                    "Cité Scientifique - Boulevard Langevin A proximité des résidences Galois et Vinci et des bâtiments de Sciences naturelles et Chimie",
+                    "50.6092029,3.1434876",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "Le Kiosk",
                     "formule sachets-repas”, pâtes à emporter et la spécialité du jour. Assiette froide à la belle saison, paiement par Carte Multiservices",
                     "11h15 à 13h40",
-                    "IUT A, Lille 1",
+                    "50.6136643,3.1345852",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "RU Sully",
                     "Chaque jour, l'équipe du Sully vous reçoit le midi, dans 2 belles salles lumineuses et au travers de comptoirs chauds et froids et de salad’bars, pour vous faire découvrir ses plats traditionnels variés, ses pâtes fraîches, ses pizzas maison et un vaste choix d’entrées et pâtisseries confectionnées sur place, paiement par Carte Multiservices",
                     "11h30 à 13h",
-                    "Cité Scientifique Boulevard Paul Langevin",
+                    "50.605811, 3.136737",
                     "0320434451",
                     ville));
             restauDao.create(new Restau(
                     "Cafétéria SN1",
                     "Paiement par Carte Multiservices",
                     "10h00 à 13h30",
-                    "Bâtiment SN1 a l'UFR de Biologie au RDC",
+                    "50.6082388,3.1416992",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "Cafétéria DESS",
                     "Paiement par Carte Multiservices",
                     "10h00 à 13h30",
-                    "Bâtiment d’enseignement pour les Masters \"MASTER\" ex.DESS - à côté de Télécom Lille",
+                    "50.6108121,3.1346875",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "Cafétéria SUP SUAIO",
                     "Paiement par Carte Multiservices",
                     "10h00 à 13h30",
-                    "Bâtiment SUP SUAIO, face à la MACC",
+                    "50.6101688,3.137021",
                     "0320434385",
                     ville));
             restauDao.create(new Restau(
                     "Sully Cabaret",
                     "Vente à emporter de sachets-repas, sandwichs, quiches, pizzas, viennoiseries, boissons froides et chaudes, paiement par Carte Multiservices, Le cabaret du sully propose chaque mercredi à partir de 21h une programmation culturelle",
                     "11h30 à 20h30",
-                    "Bâtiment SUP SUAIO, face à la MACC",
+                    "50.605811, 3.136737",
                     "0320434385",
                     ville));
 
@@ -488,24 +488,21 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "RU L'Epi",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h30 à 13h30 et du lundi au jeudi de 18h30 à 20h00 (octobre à fin avril) ",
-                    "Rue Eugène Avinée \n" +
-                            "A droite de la Fac de Médecine H. Warembourg \n",
+                    "50.6039771,3.0311037",
                     "0320169310",
                     ville));
             restauDao.create(new Restau(
                     "Salle du personnel",
                     "Paiement par Carte Multiservices",
                     "11h30 à 13h30",
-                    "Rue Eugène Avinée \n" +
-                            "A droite de la Fac de Médecine H. Warembourg \n",
+                    "50.6039771,3.0311037",
                     "0320169310",
                     ville));
             restauDao.create(new Restau(
                     "Sandwicherie du RU L'Epi",
                     "Paiement par Carte Multiservices",
                     "11h30 à 13h30 et de 18h30 à 20h45 (septembre à fin juin)",
-                    "Rue Eugène Avinée \n" +
-                            "A droite de la Fac de Médecine H. Warembourg \n",
+                    "50.6039771,3.0311037",
                     "0320169310",
                     ville));
 
@@ -515,7 +512,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                     "Bistro U",
                     "Restauration traditionnelle, paiement par Carte Multiservices",
                     "11h15 à 13h45",
-                    "Au sein de l'Université Descartes",
+                    "50.7376059,2.2583295",
                     "0321111976",
                     ville));
 
