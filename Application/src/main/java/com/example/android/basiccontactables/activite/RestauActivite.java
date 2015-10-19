@@ -37,7 +37,7 @@ public class RestauActivite extends OrmLiteBaseActivity<DatabaseHelper> {
 
         List<Restau> restaus;
             try {
-            restaus = this.getHelper().getRestauDao().queryForEq("ville_id", villeId);
+            restaus = villeId == Integer.MIN_VALUE ? this.getHelper().getRestauDao().queryForAll() : this.getHelper().getRestauDao().queryForEq("ville_id", villeId);
             restauAdapter = new ArrayAdapter<Restau>(this, android.R.layout.simple_list_item_1, restaus);
             listView.setAdapter(restauAdapter);
         } catch (SQLException e) {

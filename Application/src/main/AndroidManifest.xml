@@ -21,23 +21,16 @@
     <!-- BEGIN_INCLUDE(contacts_permission) -->
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/crous_logo"
         android:label="@string/app_name"
         android:theme="@style/Theme.Sample">
         <activity
-            android:name=".activite.VilleActivite"
-            android:label="@string/app_name"
-            android:launchMode="singleTop">
+            android:name=".activite.VilleActivite">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
-
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activite.RestauActivite">
@@ -48,6 +41,14 @@
         <activity android:name=".activite.RestauDescActivite">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activite.IndexActivite"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 

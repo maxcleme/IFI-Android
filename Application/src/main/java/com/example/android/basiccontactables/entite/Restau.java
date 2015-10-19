@@ -56,6 +56,7 @@ public class Restau  {
         this.description = description;
         this.horraire = horraire;
         this.adresse = adresse;
+        this.telephone = telephone;
         this.ville = ville;
         this.telephone = telephone;
     }

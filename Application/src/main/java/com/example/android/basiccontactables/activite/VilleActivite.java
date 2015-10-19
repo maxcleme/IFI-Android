@@ -67,9 +67,6 @@ public class VilleActivite extends OrmLiteBaseActivity<DatabaseHelper> {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(VilleActivite.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(VilleActivite.this, RestauActivite.class);
                 intent.putExtra("villeId", position+1);
 
