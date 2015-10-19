@@ -29,7 +29,7 @@ public class RestauDescActivite  extends OrmLiteBaseActivity<DatabaseHelper> {
         super.onCreate(savedInstanceState);
 
         // Get the message from the intent
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
 
         // Create the text view
         setContentView(R.layout.restau_desc);
@@ -39,31 +39,31 @@ public class RestauDescActivite  extends OrmLiteBaseActivity<DatabaseHelper> {
 
         TextView name = (TextView) findViewById(R.id.restauName);
         TextView tel = (TextView) findViewById(R.id.restauTel);
-        TextView adresse = (TextView) findViewById(R.id.restauAdresse);
         TextView horraire = (TextView) findViewById(R.id.restauHorraire);
         TextView description = (TextView) findViewById(R.id.restauDescription);
 
-        findViewById(R.id.buttonAdresse).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("google.navigation:q=50.2836246,2.7900558");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                startActivity(mapIntent);
-            }
-        });
+
 
       //  name.setText(DataCROUS.getMap().get(villeId).getListeRestau().get(restauId).getNom());
         try{
-        Restau restau = getHelper().getRestauDao().queryForId(new Long(intent.getIntExtra("restauID", Integer.MIN_VALUE)));
+        final Restau restau = getHelper().getRestauDao().queryForId(new Long(intent.getIntExtra("restauID", Integer.MIN_VALUE)));
 
 
 
         name.setText(restau.getNom());
-        tel.setText(restau.getTelephone());
-        adresse.setText(restau.getAdresse());
+        tel.setText("\u260E"+restau.getTelephone());
             horraire.setText(restau.getHorraire());
             description.setText(restau.getDescription());
+
+            findViewById(R.id.buttonAdresse).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Uri gmmIntentUri = Uri.parse("google.navigation:q="+restau.getAdresse());
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    startActivity(mapIntent);
+                }
+            });
 
         } catch (SQLException e) {
             e.printStackTrace();
