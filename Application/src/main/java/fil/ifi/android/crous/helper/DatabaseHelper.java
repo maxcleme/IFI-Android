@@ -1,10 +1,10 @@
-package com.example.android.basiccontactables.helper;
+package fil.ifi.android.crous.helper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.android.basiccontactables.entite.Restau;
-import com.example.android.basiccontactables.entite.Ville;
+import fil.ifi.android.crous.entite.Restau;
+import fil.ifi.android.crous.entite.Ville;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;

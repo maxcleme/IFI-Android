@@ -1,20 +1,12 @@
-package com.example.android.basiccontactables.activite;
+package fil.ifi.android.crous.activite;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import com.example.android.basiccontactables.R;
-import com.example.android.basiccontactables.entite.Ville;
-
-import java.sql.SQLException;
-import java.util.List;
+import fil.ifi.android.crous.R;
 
 /**
  * Created by RMS on 18/10/2015.

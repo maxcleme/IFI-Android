@@ -1,6 +1,5 @@
-package com.example.android.basiccontactables.activite;
+package fil.ifi.android.crous.activite;
 
-import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
@@ -8,13 +7,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import com.example.android.basiccontactables.R;
-import com.example.android.basiccontactables.entite.Restau;
-import com.example.android.basiccontactables.helper.DatabaseHelper;
+import fil.ifi.android.crous.R;
+import fil.ifi.android.crous.entite.Restau;
+import fil.ifi.android.crous.helper.DatabaseHelper;
+
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
 
 import java.sql.SQLException;

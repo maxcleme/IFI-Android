@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.basiccontactables.activite;
+package fil.ifi.android.crous.activite;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -25,18 +25,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
-import com.example.android.basiccontactables.R;
-import com.example.android.basiccontactables.entite.Ville;
-import com.example.android.basiccontactables.helper.DatabaseHelper;
+import fil.ifi.android.crous.R;
+import fil.ifi.android.crous.entite.Ville;
+import fil.ifi.android.crous.helper.DatabaseHelper;
+
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
-import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 
 import java.sql.SQLException;
-import java.text.Normalizer;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Simple one-activity app that takes a search term via the Action Bar
